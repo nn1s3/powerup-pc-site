@@ -126,24 +126,6 @@ body.light .cta-btn {
   z-index: 1000;
 }
 
-.main-nav ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  background-color: rgba(30, 30, 30, 0.9);
-  border-radius: 10px;
-  overflow: hidden;
-  box-shadow: 0 0 8px rgba(0,0,0,0.3);
-}
-
-.main-nav li {
-  border-bottom: 1px solid #444;
-}
-
-.main-nav li:last-child {
-  border-bottom: none;
-}
-
 .main-nav a {
   display: block;
   padding: 10px 20px;
@@ -160,14 +142,6 @@ body.light .cta-btn {
 }
 
 /* Светлая тема */
-body.light .main-nav ul {
-  background-color: rgba(255, 255, 255, 0.95);
-}
-
-body.light .main-nav li {
-  border-color: #ddd;
-}
-
 body.light .main-nav a {
   color: #7e22ce;
 }
