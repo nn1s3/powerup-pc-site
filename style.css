@@ -172,9 +172,6 @@ body.light .main-nav a:hover {
   gap: 18px;
 }
 
-
-
-
 .main-nav {
   display: flex;
   gap: 15px;
@@ -198,7 +195,7 @@ body.light .main-nav a:hover {
 
 /* Кнопка переключения темы */
 #theme-toggle {
-  background-color: #ffffff;
+  background-color: #2a2a2a; /* тёмный цвет по умолчанию */
   color: #9333ea;
   border: none;
   border-radius: 50%;
@@ -210,9 +207,15 @@ body.light .main-nav a:hover {
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 
+
 #theme-toggle:hover {
   background-color: #9333ea;
   color: #ffffff;
+}
+
+body.light #theme-toggle {
+  background-color: #ffffff;
+  color: #9333ea;
 }
 
 /* Светлая тема */
