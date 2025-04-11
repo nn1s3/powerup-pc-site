@@ -47,10 +47,18 @@ body {
 /* Секции сайта */
 .section {
   padding: 60px 0;
-  border-bottom: 1px solid #222;
   background-color: #121212;
+  border-bottom: 1px solid #222;
+  color: #ffffff;
   transition: background-color 0.3s ease, color 0.3s ease;
 }
+
+body.light .section {
+  background-color: #ffffff !important;
+  color: #121212 !important;
+  border-bottom: 1px solid #e5e5e5;
+}
+
 
 .section h2 {
   text-align: center;
