@@ -48,6 +48,8 @@ body {
 .section {
   padding: 60px 0;
   border-bottom: 1px solid #222;
+  background-color: #121212;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .section h2 {
@@ -231,4 +233,10 @@ body.light .main-nav a {
 body.light .main-nav a:hover {
   background-color: #7e22ce;
   color: white;
+}
+
+body.light .section {
+  background-color: #ffffff;
+  border-bottom: 1px solid #e0e0e0;
+  color: #121212;
 }
