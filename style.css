@@ -160,7 +160,8 @@ body.light .main-nav a:hover {
   background-color: #1e1e1e;
   display: flex;
   justify-content: flex-end;
-  padding: 0 25px;
+  align-items: flex-end;
+  padding: 0 25px 6px 25px; /* добавили нижний отступ */
   z-index: 1000;
   box-shadow: 0 0 10px rgba(0,0,0,0.4);
 }
@@ -168,9 +169,9 @@ body.light .main-nav a:hover {
 .nav-right {
   display: flex;
   align-items: flex-end;
-  gap: 20px;
-  padding-bottom: 5px; /* чуть опустить элементы вниз */
+  gap: 18px;
 }
+
 
 
 
