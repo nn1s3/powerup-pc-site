@@ -12,25 +12,3 @@ document.addEventListener('DOMContentLoaded', () => {
     console.error("Кнопка переключения темы не найдена!");
   }
 });
-
-.price-table h3 {
-  margin-top: 40px;
-  color: #9333ea;
-  text-align: center;
-}
-
-.price-table table {
-  width: 100%;
-  border-collapse: collapse;
-  margin: 15px 0 30px;
-}
-
-.price-table td {
-  padding: 12px 15px;
-  border-bottom: 1px solid #333;
-  font-size: 1rem;
-}
-
-body.light .price-table td {
-  border-color: #ddd;
-}
