@@ -62,3 +62,61 @@ footer {
   padding: 20px;
   background-color: #1f1f1f;
 }
+/* Кнопка переключения темы */
+header {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  z-index: 1000;
+}
+
+#theme-toggle {
+  background-color: #ffffff;
+  color: #9333ea;
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  font-size: 18px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+#theme-toggle:hover {
+  background-color: #9333ea;
+  color: #ffffff;
+}
+
+/* Светлая тема */
+body.light {
+  background-color: #ffffff;
+  color: #121212;
+}
+
+body.light .section {
+  border-bottom: 1px solid #ddd;
+}
+
+body.light .hero {
+  background: linear-gradient(to right, #d8b4fe, #f3e8ff);
+}
+
+body.light .cta-btn {
+  background: #9333ea;
+  color: #ffffff;
+}
+
+/* Обновлённая кнопка "Оставить заявку" */
+.cta-btn {
+  background: #9333ea;
+  color: #ffffff;
+  padding: 12px 25px;
+  border-radius: 12px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.cta-btn:hover {
+  background: #7e22ce;
+}
