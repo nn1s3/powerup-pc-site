@@ -167,10 +167,11 @@ body.light .main-nav a:hover {
 
 .nav-right {
   display: flex;
-  align-items: center;
+  align-items: flex-end;
   gap: 20px;
-  margin-top: -15px; /* Чуть выше навигация */
+  padding-bottom: 5px; /* чуть опустить элементы вниз */
 }
+
 
 
 .main-nav {
