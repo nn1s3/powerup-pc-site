@@ -72,11 +72,10 @@ footer {
   color: #9333ea;
   border: none;
   border-radius: 50%;
-  width: 42px;
-  height: 42px;
+  width: 40px;
+  height: 40px;
   font-size: 20px;
   cursor: pointer;
-  z-index: 1000;
   transition: all 0.3s ease;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
@@ -88,9 +87,8 @@ footer {
 
 
 /* Светлая тема */
-body.light {
-  background-color: #ffffff;
-  color: #121212;
+body.light .top-bar {
+  background-color: #f8f8f8;
 }
 
 body.light .section {
@@ -171,6 +169,76 @@ body.light .main-nav li {
 }
 
 body.light .main-nav a {
+  color: #7e22ce;
+}
+
+body.light .main-nav a:hover {
+  background-color: #7e22ce;
+  color: white;
+}
+/* Горизонтальный навбар */
+.top-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 60px;
+  background-color: #1e1e1e;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+  z-index: 1000;
+  box-shadow: 0 0 10px rgba(0,0,0,0.4);
+}
+
+.main-nav {
+  display: flex;
+  gap: 15px;
+}
+
+.main-nav a {
+  background-color: #2a2a2a;
+  padding: 8px 15px;
+  border-radius: 12px;
+  color: #9333ea;
+  text-decoration: none;
+  font-weight: 600;
+  transition: 0.3s ease;
+  font-size: 0.95rem;
+}
+
+.main-nav a:hover {
+  background-color: #9333ea;
+  color: white;
+}
+
+/* Кнопка переключения темы */
+#theme-toggle {
+  background-color: #ffffff;
+  color: #9333ea;
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  font-size: 20px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+#theme-toggle:hover {
+  background-color: #9333ea;
+  color: #ffffff;
+}
+
+/* Светлая тема */
+body.light .top-bar {
+  background-color: #f8f8f8;
+}
+
+body.light .main-nav a {
+  background-color: #eeeeee;
   color: #7e22ce;
 }
 
