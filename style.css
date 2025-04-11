@@ -62,30 +62,30 @@ footer {
   padding: 20px;
   background-color: #1f1f1f;
 }
-/* Кнопка переключения темы */
-header {
-  position: fixed;
-  top: 10px;
-  right: 10px;
-  z-index: 1000;
-}
 
+/* Кнопка переключения темы — фиксировано в правом верхнем углу */
 #theme-toggle {
+  position: fixed;
+  top: 20px;
+  right: 20px;
   background-color: #ffffff;
   color: #9333ea;
   border: none;
   border-radius: 50%;
-  width: 40px;
-  height: 40px;
-  font-size: 18px;
+  width: 42px;
+  height: 42px;
+  font-size: 20px;
   cursor: pointer;
-  transition: background 0.3s ease;
+  z-index: 1000;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 
 #theme-toggle:hover {
   background-color: #9333ea;
   color: #ffffff;
 }
+
 
 /* Светлая тема */
 body.light {
