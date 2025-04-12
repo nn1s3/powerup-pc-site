@@ -45,7 +45,7 @@ body.light .hero {
   margin-bottom: 30px;
 }
 
-./* Общая кнопка */
+/* Общая кнопка */
 .cta-btn {
   display: inline-block;
   padding: 14px 32px;
@@ -53,25 +53,28 @@ body.light .hero {
   font-size: 1.1rem;
   font-weight: bold;
   text-decoration: none;
-  color: #fff;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  box-shadow: 0 0 0 rgba(0, 0, 0, 0); /* убираем начальное свечение */
-}
-
-/* Темная тема */
-body:not(.light) .cta-btn {
+  color: #ffffff;
   background: linear-gradient(to right, #7e22ce, #9333ea);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 0 0 rgba(0, 0, 0, 0);
 }
 
 /* Светлая тема */
 body.light .cta-btn {
   background: linear-gradient(to right, #d8b4fe, #a855f7);
+  color: #ffffff;
 }
 
 /* Анимация при наведении */
 .cta-btn:hover {
   transform: scale(1.05);
-  box-shadow: 0 0 15px 4px rgba(147, 51, 234, 0.6); /* яркое лиловое свечение */
+  box-shadow: 0 0 15px 4px rgba(147, 51, 234, 0.6);
+}
+
+/* При нажатии */
+.cta-btn:active {
+  transform: scale(0.96);
+  transition: transform 0.1s ease;
 }
 
 /* Секции сайта */
@@ -115,26 +118,6 @@ body.light .section {
 
 body.light .cta-btn {
   background: #9333ea;
-  color: #ffffff;
-}
-
-/* Обновлённая кнопка "Оставить заявку" */
-.cta-btn {
-  background: #9333ea;
-  color: #ffffff;
-  padding: 12px 25px;
-  border-radius: 12px;
-  text-decoration: none;
-  font-weight: bold;
-  transition: 0.3s;
-}
-
-.cta-btn:hover {
-  background: #7e22ce;
-}
-
-body:not(.light) .cta-btn {
-  background: #1f1f1f; /* Темный для тёмной темы */
   color: #ffffff;
 }
 
