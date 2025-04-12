@@ -6,9 +6,15 @@ document.addEventListener('DOMContentLoaded', () => {
   if (toggle) {
     toggle.addEventListener('click', () => {
       document.body.classList.toggle('light');
-      toggle.textContent = document.body.classList.contains('light') ? '☀️' : '🌑';
+
+      // Обновляем иконку
+      const icon = toggle.querySelector('.toggle-icon');
+      if (document.body.classList.contains('light')) {
+        icon.textContent = "☀️";
+      } else {
+        icon.textContent = "🌙";
+      }
     });
-  } else {
-    console.error("Кнопка переключения темы не найдена!");
   }
 });
+
