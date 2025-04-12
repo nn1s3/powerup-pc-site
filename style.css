@@ -251,7 +251,7 @@ body.light .section {
     z-index: 1001;
   } 
 
-/* === Тумблер переключения темы === */
+/* --- Кнопка-тумблер --- */
 #theme-toggle.toggle-switch {
   position: fixed;
   top: 20px;
@@ -262,34 +262,29 @@ body.light .section {
   border-radius: 30px;
   border: none;
   cursor: pointer;
-  display: flex;
-  align-items: center;
-  padding: 5px;
-  justify-content: flex-start;
+  padding: 0;
   transition: background-color 0.3s ease;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
   z-index: 1001;
 }
 
 #theme-toggle .toggle-icon {
+  content: "";
   display: block;
-  width: 20px;
-  height: 20px;
+  width: 22px;
+  height: 22px;
   background-color: #9333ea;
   border-radius: 50%;
-  text-align: center;
-  line-height: 20px;
-  font-size: 14px;
-  color: white;
+  margin: 4px;
   transition: transform 0.3s ease, background-color 0.3s ease;
 }
 
-body.light #theme-toggle {
+/* Светлая тема: фон светлый, шарик жёлтый */
+body.light #theme-toggle.toggle-switch {
   background-color: #ddd;
-  justify-content: flex-end;
 }
 
 body.light #theme-toggle .toggle-icon {
-  background-color: #facc15;
-  color: #000;
+  transform: translateX(30px);
+  background-color: #facc15; /* жёлтый */
 }
