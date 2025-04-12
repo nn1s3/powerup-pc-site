@@ -26,7 +26,7 @@ body {
 }
 
 body.light .hero {
-  background: url("images/hero-light.png") no-repeat center center;
+  background: url("images/hero-light-v2.png") no-repeat center center;
   background-size: cover;
 }
 
