@@ -66,3 +66,14 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 });
+
+document.addEventListener('DOMContentLoaded', () => {
+  const commentField = document.getElementById('comment');
+
+  if (commentField) {
+    commentField.addEventListener('input', () => {
+      commentField.style.height = 'auto'; // сброс текущей высоты
+      commentField.style.height = commentField.scrollHeight + 'px'; // установка по содержимому
+    });
+  }
+});

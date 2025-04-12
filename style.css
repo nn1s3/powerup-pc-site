@@ -23,6 +23,7 @@ body {
   background: url("images/hero-dark.png") no-repeat center center;
   background-size: cover;
   transition: background 0.5s ease;
+  scroll-margin-top: 80px;
 }
 
 body.light .hero {
@@ -364,12 +365,15 @@ body:not(.light) .slider {
 .modal-window select,
 .modal-window textarea {
   width: 100%;
+  min-height: 40px;
   padding: 10px;
   margin: 12px 0;
   border: none;
   border-radius: 8px;
   font-family: inherit;
-  resize: vertical;
+  overflow: hidden;
+  resize: none; /* запрет на ручное изменение размера */
+  transition: height 0.2s ease;
 }
 
 .modal-window select:invalid {
