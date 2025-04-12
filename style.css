@@ -17,7 +17,14 @@ body {
 .hero {
   text-align: center;
   padding: 80px 20px;
-  background: linear-gradient(to right, #7e22ce, #9333ea);
+  background: url("images/hero-dark.png") no-repeat center center;
+  background-size: cover;
+  transition: background 0.5s ease;
+}
+
+body.light .hero {
+  background: url("images/hero-light.png") no-repeat center center;
+  background-size: cover;
 }
 
 .hero .logo {
