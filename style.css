@@ -288,7 +288,7 @@ body.light #theme-toggle .toggle-icon {
   transform: translateX(30px);
   background-color: #facc15; /* жёлтый */
 }
-/* Контейнер тумблера */
+/* === Тумблер-переключатель === */
 .theme-switch {
   position: fixed;
   top: 20px;
@@ -296,20 +296,19 @@ body.light #theme-toggle .toggle-icon {
   width: 60px;
   height: 34px;
   display: inline-block;
+  z-index: 1001;
 }
 
-/* Скрываем стандартный чекбокс */
 .theme-switch input {
   opacity: 0;
   width: 0;
   height: 0;
 }
 
-/* Слайдер */
 .slider {
   position: absolute;
   cursor: pointer;
-  background-color: #ccc;
+  background-color: #2a2a2a;
   border-radius: 34px;
   top: 0;
   left: 0;
@@ -318,7 +317,6 @@ body.light #theme-toggle .toggle-icon {
   transition: background-color 0.4s;
 }
 
-/* Шарик внутри слайдера */
 .slider::before {
   position: absolute;
   content: "";
@@ -326,24 +324,25 @@ body.light #theme-toggle .toggle-icon {
   width: 26px;
   left: 4px;
   bottom: 4px;
-  background-color: white;
+  background-color: #9333ea;
   border-radius: 50%;
-  transition: transform 0.4s;
+  transition: transform 0.4s ease;
 }
 
-/* При включении чекбокса перемещаем шарик */
-.theme-switch input:checked + .slider::before {
+/* Активное состояние: шарик вправо */
+input:checked + .slider::before {
   transform: translateX(26px);
+  background-color: #facc15;
 }
 
-/* Цвет слайдера в светлой теме */
+/* Светлая тема — светлый фон тумблера */
 body.light .slider {
   background-color: #ccc;
 }
 
-/* Цвет слайдера в тёмной теме */
+/* Тёмная тема — тёмный фон */
 body:not(.light) .slider {
-  background-color: #666;
+  background-color: #2a2a2a;
 }
 
 

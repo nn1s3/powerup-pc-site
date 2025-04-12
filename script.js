@@ -3,7 +3,7 @@ console.log("PowerUp PC сайт загружен");
 document.addEventListener('DOMContentLoaded', () => {
   const toggle = document.getElementById('theme-toggle');
 
-  // Проверяем, сохранена ли тема в localStorage
+  // При загрузке — проверить и применить тему
   if (localStorage.getItem('theme') === 'light') {
     document.body.classList.add('light');
     toggle.checked = true;
