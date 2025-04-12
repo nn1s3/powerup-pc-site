@@ -237,7 +237,6 @@ body.light #theme-toggle .toggle-icon {
   transform: translateX(30px);
   background-color: #facc15; /* жёлтый */
 }
-/* === Тумблер-переключатель === */
 .theme-switch {
   position: fixed;
   top: 20px;
@@ -257,39 +256,38 @@ body.light #theme-toggle .toggle-icon {
 .slider {
   position: absolute;
   cursor: pointer;
-  background-color: #2a2a2a;
-  border-radius: 34px;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
+  background-color: #2a2a2a;
   transition: background-color 0.4s;
+  border-radius: 34px;
+  box-sizing: border-box;
 }
 
 .slider::before {
-  position: absolute;
   content: "";
+  position: absolute;
   height: 26px;
   width: 26px;
   left: 4px;
   bottom: 4px;
   background-color: #9333ea;
+  transition: transform 0.4s ease, background-color 0.4s ease;
   border-radius: 50%;
-  transition: transform 0.4s ease;
+  box-sizing: border-box;
 }
 
-/* Активное состояние: шарик вправо */
-input:checked + .slider::before {
+.theme-switch input:checked + .slider::before {
   transform: translateX(26px);
   background-color: #facc15;
 }
 
-/* Светлая тема — светлый фон тумблера */
 body.light .slider {
   background-color: #ccc;
 }
 
-/* Тёмная тема — тёмный фон */
 body:not(.light) .slider {
   background-color: #2a2a2a;
 }
