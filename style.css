@@ -301,15 +301,16 @@ body:not(.light) .slider {
 @media (max-width: 768px) {
   .top-bar {
     flex-direction: column;
-    align-items: stretch;
-    height: auto;
+    align-items: flex-start;
     padding: 10px 15px;
     position: relative;
+    height: auto;
   }
 
   .nav-right {
-    flex-direction: column;
-    align-items: stretch;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     width: 100%;
   }
 
@@ -317,10 +318,10 @@ body:not(.light) .slider {
     display: flex;
     overflow-x: auto;
     white-space: nowrap;
-    gap: 10px;
+    width: 100%;
     padding: 10px 0;
-    margin-right: 60px; /* чтобы тумблер не перекрывал */
-    scroll-behavior: smooth;
+    gap: 10px;
+    scrollbar-width: none;
   }
 
   .main-nav::-webkit-scrollbar {
@@ -334,6 +335,7 @@ body:not(.light) .slider {
     border-radius: 12px;
     color: #9333ea;
     font-weight: 600;
+    text-decoration: none;
     white-space: nowrap;
     flex-shrink: 0;
   }
@@ -342,7 +344,6 @@ body:not(.light) .slider {
     position: absolute;
     top: 10px;
     right: 15px;
-    z-index: 1001;
+    z-index: 10;
   }
 }
-
