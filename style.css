@@ -89,10 +89,6 @@ body.light .section {
   border-bottom: 1px solid #ddd;
 }
 
-body.light .hero {
-  background: linear-gradient(to right, #d8b4fe, #f3e8ff);
-}
-
 body.light .cta-btn {
   background: #9333ea;
   color: #ffffff;
