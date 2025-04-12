@@ -7,6 +7,7 @@
   <link rel="stylesheet" href="style.css">
   <link rel="icon" href="images/logo.svg" type="image/svg+xml">
 </head>
+
 <body>
     <div class="top-bar">
       <div class="nav-right">
@@ -25,6 +26,20 @@
       </div>
     </div>
   
+    <!-- Модальное окно -->
+<div id="modal-overlay" class="modal-overlay">
+  <div class="modal-window">
+    <button class="modal-close" id="close-modal">✖</button>
+    <h2>Оставьте заявку</h2>
+    <p>Напишите нам в Telegram или WhatsApp, либо укажите ваш номер:</p>
+    <form>
+      <input type="text" placeholder="Ваше имя" required>
+      <input type="tel" placeholder="Телефон" required>
+      <button type="submit" class="cta-btn">Отправить</button>
+    </form>
+  </div>
+</div>
+
   
   <!-- Hero section -->
   <section class="hero">
@@ -32,7 +47,7 @@
       <!-- <img src="images/logo.svg" class="logo"> -->
       <h1>PowerUP PC — твой компьютер, твои правила</h1>
       <p>Сборка, обслуживание и ремонт игровых ПК и ноутбуков в Самаре</p>
-      <a href="#contacts" class="cta-btn">Оставить заявку</a>
+      <a href="#contacts" class="cta-btn" id="open-modal">Оставить заявку</a>
     </div>
   </section>
 
