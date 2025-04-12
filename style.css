@@ -19,7 +19,7 @@ body {
 /* Hero секция */
 .hero {
   text-align: center;
-  padding: 80px 20px;
+  padding: 140px 20px 140px;
   background: url("images/hero-dark.png") no-repeat center center;
   background-size: cover;
   transition: background 0.5s ease;
