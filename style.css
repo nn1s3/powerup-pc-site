@@ -234,14 +234,14 @@ body.light .section {
   transition: transform 0.3s ease, background-color 0.3s ease;
 }
 
-/* Светлая тема: фон светлый, шарик жёлтый */
+/* Светлая тема: фон светлый, шарик фиолетовый */
 body.light #theme-toggle.toggle-switch {
   background-color: #ddd;
 }
 
 body.light #theme-toggle .toggle-icon {
   transform: translateX(30px);
-  background-color: #facc15; /* жёлтый */
+  background-color: #9333ea; 
 }
 .theme-switch {
   position: fixed;
@@ -287,7 +287,7 @@ body.light #theme-toggle .toggle-icon {
 
 .theme-switch input:checked + .slider::before {
   transform: translateX(26px);
-  background-color: #facc15;
+  background-color: #9333ea;
 }
 
 body.light .slider {
@@ -338,9 +338,9 @@ body:not(.light) .slider {
   }
 
   .theme-switch {
-    position: absolute;
-    top: 10px;
-    right: 15px;
-    z-index: 1001;
+    align-self: flex-end;
+    margin-bottom: 8px;
+    z-index: 1;
+    position: relative;
   }
-}
+  
