@@ -286,7 +286,9 @@ body.light #theme-toggle .toggle-icon {
   transition: transform 0.4s ease, background-color 0.4s ease;
   border-radius: 50%;
   box-sizing: border-box;
+  box-shadow: inset -2px -2px 5px rgba(255, 255, 255, 0.4), inset 2px 2px 5px rgba(0, 0, 0, 0.2);
 }
+
 
 .theme-switch input:checked + .slider::before {
   transform: translateX(26px);
