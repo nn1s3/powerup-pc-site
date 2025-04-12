@@ -19,3 +19,20 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   });
 });
+
+document.addEventListener("DOMContentLoaded", () => {
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("animate");
+        observer.unobserve(entry.target); // запускается один раз
+      }
+    });
+  }, {
+    threshold: 0.1,
+  });
+
+  document.querySelectorAll(".section").forEach(section => {
+    observer.observe(section);
+  });
+});
