@@ -61,6 +61,7 @@ body.light .hero {
   border-bottom: 1px solid #222;
   color: #ffffff;
   transition: background-color 0.3s ease, color 0.3s ease;
+  scroll-margin-top: 80px; /* отступ при якорной прокрутке */
 }
 
 body.light .section {
