@@ -33,10 +33,23 @@
     <h2>Оставьте заявку</h2>
     <p>Напишите нам в Telegram или WhatsApp, либо укажите ваш номер:</p>
     <form>
-      <input type="text" placeholder="Ваше имя" required>
-      <input type="tel" placeholder="Телефон" required>
+      <input type="text" placeholder="Ваше имя *" required>
+      <input type="tel" placeholder="Телефон *" required>
+      <input type="text" placeholder="Telegram (необязательно)">
+    
+      <select required>
+        <option value="" disabled selected>Выберите услугу *</option>
+        <option value="build">Сборка ПК под ключ</option>
+        <option value="repair">Ремонт компьютера</option>
+        <option value="cleaning">Чистка и обслуживание</option>
+        <option value="upgrade">Апгрейд или настройка</option>
+        <option value="other">Другое</option>
+      </select>
+    
+      <textarea placeholder="Комментарий (необязательно)" rows="3"></textarea>
+    
       <button type="submit" class="cta-btn">Отправить</button>
-    </form>
+    </form>    
   </div>
 </div>
 

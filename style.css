@@ -361,6 +361,22 @@ body:not(.light) .slider {
   border-radius: 8px;
 }
 
+.modal-window select,
+.modal-window textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 12px 0;
+  border: none;
+  border-radius: 8px;
+  font-family: inherit;
+  resize: vertical;
+}
+
+.modal-window select:invalid {
+  color: #999;
+}
+
+
 .modal-close {
   position: absolute;
   top: 10px;
