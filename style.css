@@ -485,10 +485,10 @@ body.light .wave-animation path {
     display: block;
     font-size: 28px;
     cursor: pointer;
-    z-index: 2001;
     position: fixed;
-    top: 18px;
+    top: 20px;
     left: 15px;
+    z-index: 3000;
     color: #9333ea;
   }
 
@@ -536,8 +536,8 @@ body.light .wave-animation path {
 
   .theme-switch {
     position: fixed;
-    top: 12px;
+    top: 18px;
     right: 15px;
-    z-index: 2002;
+    z-index: 3000;
   }
 }
