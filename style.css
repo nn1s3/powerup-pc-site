@@ -473,10 +473,10 @@ body.light .wave-animation path {
   .top-bar {
     flex-direction: column;
     align-items: stretch;
-    padding: 10px 15px 5px;
+    padding: 60px 15px 5px;
     height: auto;
     position: relative;
-  }
+  }  
 
   .nav-right {
     width: 100%;
@@ -509,9 +509,9 @@ body.light .wave-animation path {
   }
 
   .theme-switch {
-    align-self: flex-end;
-    margin-bottom: 8px;
-    z-index: 1;
-    position: relative;
-  }
+    position: fixed; /* фиксируем в правом верхнем углу */
+    top: 12px;
+    right: 15px;
+    z-index: 1001;
+  }  
   
