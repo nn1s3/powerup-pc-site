@@ -443,6 +443,31 @@ body.light .modal-close {
   }
 }
 
+.wave-animation {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 100px;
+  overflow: hidden;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.wave-animation svg {
+  display: block;
+  width: 100%;
+  height: 100%;
+  transform: translateY(50%);
+}
+
+.hero {
+  position: relative; /* обязательно */
+  z-index: 1;
+}
+
+body.light .wave-animation path {
+  fill: #d8b4fe;
+}
 
 @media (max-width: 768px) {
   .top-bar {
