@@ -1,6 +1,7 @@
 /* Общие стили */
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 body {
