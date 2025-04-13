@@ -469,6 +469,39 @@ body.light .wave-animation path {
   fill: #d8b4fe;
 }
 
+.burger {
+  display: none;
+  font-size: 28px;
+  cursor: pointer;
+  z-index: 2001;
+  position: fixed;
+  top: 18px;
+  left: 15px;
+  color: #9333ea;
+}
+@media (max-width: 768px) {
+  .burger {
+    display: block;
+  }
+
+  .main-nav {
+    position: fixed;
+    top: 60px;
+    left: 0;
+    right: 0;
+    flex-direction: column;
+    background-color: #1e1e1e;
+    display: none;
+    padding: 15px;
+    gap: 10px;
+    z-index: 1500;
+  }
+
+  .main-nav.show {
+    display: flex;
+  }
+}
+
 @media (max-width: 768px) {
   .top-bar {
     flex-direction: column;
