@@ -39,7 +39,7 @@ body.light .hero {
 .hero h1 {
   font-size: 2.5rem;
   margin-bottom: 10px;
-  
+
 }
 .hero-title {
   font-size: 3rem;
@@ -424,7 +424,21 @@ body.light .modal-close {
   to { transform: translateY(0); opacity: 1; }
 }
 
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(147, 51, 234, 0.4);
+  }
+  70% {
+    box-shadow: 0 0 15px 10px rgba(147, 51, 234, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(147, 51, 234, 0);
+  }
+}
 
+.cta-btn.pulse {
+  animation: pulse 2s infinite;
+}
 
 @media (max-width: 768px) {
   .top-bar {
