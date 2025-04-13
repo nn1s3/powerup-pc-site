@@ -489,6 +489,12 @@ body.light .wave-animation path {
 }
 
 @media (max-width: 768px) {
+
+  .hero {
+    margin-top: 60px;
+  }
+}
+
   .burger {
     display: block;
     font-size: 28px;
@@ -505,7 +511,7 @@ body.light .wave-animation path {
     align-items: stretch;
     padding: 10x 15px;
     height: auto;
-    position: static;
+    position: fixed;
   }
 
   .nav-right {
@@ -547,5 +553,6 @@ body.light .wave-animation path {
     top: 18px;
     right: 15px;
     z-index: 3000;
+    display: block;
   }
 }
