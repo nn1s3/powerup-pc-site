@@ -424,24 +424,25 @@ body.light .modal-close {
   to { transform: translateY(0); opacity: 1; }
 }
 
-@keyframes pulseEffect {
+.cta-btn.breathing {
+  animation: breathingEffect 2.5s ease-in-out infinite;
+}
+
+@keyframes breathingEffect {
   0% {
     transform: scale(1);
-    box-shadow: 0 0 0 0 rgba(147, 51, 234, 0.6);
+    box-shadow: 0 0 0 0 rgba(147, 51, 234, 0.4);
   }
   50% {
-    transform: scale(1.07);
-    box-shadow: 0 0 15px 6px rgba(147, 51, 234, 0.6);
+    transform: scale(1.05);
+    box-shadow: 0 0 20px 8px rgba(147, 51, 234, 0.3);
   }
   100% {
     transform: scale(1);
-    box-shadow: 0 0 0 0 rgba(147, 51, 234, 0.6);
+    box-shadow: 0 0 0 0 rgba(147, 51, 234, 0.4);
   }
 }
 
-..cta-btn.pulse {
-  animation: pulseEffect 1.2s infinite ease-in-out;
-}
 
 @media (max-width: 768px) {
   .top-bar {
