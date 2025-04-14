@@ -478,6 +478,16 @@ body.light .wave-animation path {
   fill: #d8b4fe;
 }
 
+/* Для десктопа (по умолчанию) */
+.burger {
+  display: none;
+}
+
+.main-nav {
+  display: flex;
+  gap: 15px;
+}
+
 @media (max-width: 768px) {
 
   .hero {
